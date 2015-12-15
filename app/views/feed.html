@@ -1,0 +1,8 @@
+<div ng-controller="FeedController">
+	<p class="good_reads_title">Good reads</p>
+	<ul>
+		<li class="article" ng-repeat="article in goodReads">
+			<a target="_blank" href="{{article.link}}">{{article.title | limitTo:23}} ...</a>
+		</li>
+	</ul>
+</div>
