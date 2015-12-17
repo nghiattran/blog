@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -14,8 +16,9 @@ li a, li a:hover{
   color: black;
 }
 
-p, h1, h2, h3, h4, h5, a {
+p, h1, h2, h3, h4, h5, a, pre {
   font-family: 'Ubuntu', sans-serif;
+  color: #333333;
 }
 
 body {
@@ -112,7 +115,7 @@ body {
 .brand { margin-left: auto; margin-right: auto; }
 .navbar-inverse { background-color: #222222}
 .navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #222222}
-.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #080808}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: transparent;}
 .dropdown-menu { background-color: #FFFFFF}
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #858585}
 .navbar-inverse { background-image: none; }
@@ -130,7 +133,7 @@ body {
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
 .navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
 .navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
-
+/*.navbar-inverse .navbar-nav>.active>a{background-color: transparent}*/
 
 
 
@@ -141,20 +144,14 @@ body {
 }
 
 .content{
-  /*background-color: #858585;*/
-
   max-width: 700px;
 }
 
 .feed{
   right: 0px;
-  width: 300px;
+  height: 100%;
   position: fixed;
   background-color: #f2f2f2;
-}
-
-.body,.content, .feed {
-  min-height: 600px;
 }
 
 .content, .feed {
@@ -204,16 +201,84 @@ body {
   margin-bottom: 30px;
 }
 
-.wall a, .wall a:hover {
+.content a, .content a:hover {
   text-decoration: none;
   color: inherit;
 } 
 
 .cover_image {
-  height: 250px;
+  height: 200px;
   overflow: hidden;
 }
 
 .cover_image img {
   width: 100%;
+}
+
+.main{
+  margin-top: 50px;
+}
+
+/*A post*/
+
+.post_content {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 200%;
+  border-bottom: 1px solid #9B9B9B;
+}
+@media (min-width: 480px) {
+  .post_content {
+    width: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .post_content {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .post_content {
+    width: 750px;
+  }
+}
+@media (min-width: 1200px) {
+  .post_content {
+    width: 750px;
+    padding-top: 50px;
+  }
+}
+
+.post_content h1, .post_content h2, .post_content h3, .post_content h4, .post_content h5{
+  font-weight: bold;
+}
+
+.post_content h1 {
+  font-size: 60px;
+}
+
+.post_content h2 {
+  font-size: 45px;
+}
+
+.post_content h3 {
+  font-size: 35px;
+}
+
+.post_content h4 {
+  font-size: 30px;
+}
+
+.post_content pre{
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 600px;
+  margin: auto;
+  border: 0px;
 }

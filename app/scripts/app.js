@@ -26,10 +26,17 @@ angular
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-    .state('main', 
+    .state('wall', 
     {
       url: '/',
       templateUrl: 'views/wall.html',
       controller: 'ArticleController',
-    });
+    })
+
+    .state('post', 
+    {
+      url: '/post/:post_name',
+      templateUrl: 'views/post.html',
+      controller: 'ArticleController',
+    })
   });
